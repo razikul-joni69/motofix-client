@@ -1,0 +1,22 @@
+.blogs .card {
+    border: 0;
+}
+.blogs .card-header {
+    border: 0;
+    background-color: transparent;
+}
+
+.blogs .card:hover {
+    background-image: linear-gradient(to right, #fdad35f3, #ff9900);
+    background-size: 200% 100%;
+    color: #fff !important;
+    transition: 0.2s all ease-in-out !important;
+}
+
+.blogs .card:hover h6,
+.blogs .card:hover p {
+    color: #fff !important;
+}
+
+  
+

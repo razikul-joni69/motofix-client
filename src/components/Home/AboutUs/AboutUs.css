@@ -1,0 +1,41 @@
+.technichians{
+    background: #e3f3fc;
+    height: 250px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.client{
+    background: #F9E8E2;
+    height: 250px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.experience{
+    background: #F1E7FD;
+    height: 250px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.complete{
+    background: #FDF4E3;
+    height: 250px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.images{
+    width: 20%;
+}
+.bottom-bar:before {
+    content: "";
+    position: absolute;
+    left: 39%;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #ed5217;
+    border-radius: 20px;
+}

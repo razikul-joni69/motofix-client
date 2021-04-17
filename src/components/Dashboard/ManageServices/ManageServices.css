@@ -1,0 +1,22 @@
+.services {
+    background-color: #f4fdfb;
+}
+.edit,
+.delete {
+    cursor: pointer;
+}
+table {
+    width: 100%;
+}
+th {
+    background-color: rgb(240, 167, 11);
+    color: white;
+}
+table,
+th,
+td,
+tbody {
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
+}

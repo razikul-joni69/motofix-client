@@ -1,0 +1,105 @@
+/* main button */
+.main-btn {
+    background: -webkit-linear-gradient(left, #ffc600, #ff4200 50%, #ffc600);
+    background-size: 300%, 1px;
+    background-position: 0;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    background-color: #ed5217;
+    color: #fdf0eb;
+    font-weight: 700;
+    padding: 13px 38px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 1px solid #ed5217;
+    border: none;
+}
+
+.bottom-bar:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #ed5217;
+    border-radius: 20px;
+}
+.info-text {
+    font-size: 16px;
+    font-size: 1rem;
+    color: #ed5217;
+    text-transform: capitalize;
+    display: block;
+    margin-top: -0.6em;
+}
+
+.text-color {
+    color: #ed5217;
+}
+
+.business-info{
+    background: -webkit-linear-gradient(left, #ffc800c7, #ffc600, #ff8800 );
+    color: black;
+}
+.dark-info{
+    background: -webkit-linear-gradient(left, #303030c7, #292928, #000000);
+    color: white;
+}
+
+
+/*  */
+.btn-brand {
+    background: -webkit-linear-gradient(left, #ffc800c7, #ffc600, #ff8800 );
+    border-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.text-brand {
+    color: #ed5217;
+}
+
+/* calendar design */
+.calender-area {
+    position: absolute;
+    bottom: -50px;
+}
+.react-calendar {
+    border: 0;
+    box-shadow: 0 0 10px #f1eded;
+    padding: 5%;
+    width: 100%;
+}
+.react-calendar__navigation {
+    height: 100px;
+}
+.react-calendar__month-view__weekdays abbr[data-original-title],
+.react-calendar__month-view__weekdays abbr[title],
+.react-calendar__month-view__days__day,
+.react-calendar__month-view__weekdays,
+.react-calendar__month-view__days__day--weekend {
+    text-decoration: none;
+    color: #686868;
+    text-transform: unset;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: #eaeaea;
+}
+.react-calendar__tile--active {
+    background-image: linear-gradient(75deg, #19d3ae, #0fcfec);
+    border-radius: 5px;
+    color: #ffffff;
+}
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+    display: none;
+}
+.react-calendar__navigation__next-button,
+.react-calendar__navigation__prev-button {
+    font-size: 2em;
+    opacity: 0.2;
+}
+.react-calendar__tile {
+    padding: 1em 0.5em;
+}
+
+/* End of calendar design */
