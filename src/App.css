@@ -37,19 +37,18 @@
     color: #ed5217;
 }
 
-.business-info{
-    background: -webkit-linear-gradient(left, #ffc800c7, #ffc600, #ff8800 );
+.business-info {
+    background: -webkit-linear-gradient(left, #ffc800c7, #ffc600, #ff8800);
     color: black;
 }
-.dark-info{
+.dark-info {
     background: -webkit-linear-gradient(left, #303030c7, #292928, #000000);
     color: white;
 }
 
-
 /*  */
 .btn-brand {
-    background: -webkit-linear-gradient(left, #ffc800c7, #ffc600, #ff8800 );
+    background: -webkit-linear-gradient(left, #ffc800c7, #ffc600, #ff8800);
     border-color: transparent;
     text-transform: uppercase;
     font-weight: 600;

@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AddEmployee from "./components/AddEmployee/AddEmployee";
-import AllPatients from "./components/AllPatients/AllPatients/AllPatients";
+import AllAppointments from "./components/AllAppointments/AllAppointments/AllAppointments";
 import Appointment from "./components/Appointment/Appointment/Appointment";
 import CheckOut from "./components/Dashboard/CheckOut/CheckOut";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
@@ -20,9 +20,12 @@ function App() {
         <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
             <Router>
                 <Switch>
-                    <Route path="/appointment">
-                        <Appointment></Appointment>
+                    <Route path="/home">
+                        <Home />
                     </Route>
+                    <PrivateRoute path="/appointment">
+                        <Appointment></Appointment>
+                    </PrivateRoute>
                     <PrivateRoute path="/dashboard">
                         <Dashboard></Dashboard>
                     </PrivateRoute>
@@ -35,12 +38,12 @@ function App() {
                     <PrivateRoute path="/checkout/:id">
                         <CheckOut></CheckOut>
                     </PrivateRoute>
-                    <PrivateRoute path="/allPatients">
-                        <AllPatients></AllPatients>
+                    <PrivateRoute path="/allAppointments">
+                        <AllAppointments></AllAppointments>
                     </PrivateRoute>
-                    <Route path="/addEmployee">
+                    <PrivateRoute path="/addEmployee">
                         <AddEmployee></AddEmployee>
-                    </Route>
+                    </PrivateRoute>
                     <Route path="/login">
                         <Login></Login>
                     </Route>

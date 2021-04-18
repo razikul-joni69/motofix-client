@@ -1,32 +1,32 @@
-.technichians{
+.technichians {
     background: #e3f3fc;
     height: 250px;
     border-radius: 50%;
     top: 0;
     left: 0;
 }
-.client{
-    background: #F9E8E2;
+.client {
+    background: #f9e8e2;
     height: 250px;
     border-radius: 50%;
     top: 0;
     left: 0;
 }
-.experience{
-    background: #F1E7FD;
+.experience {
+    background: #f1e7fd;
     height: 250px;
     border-radius: 50%;
     top: 0;
     left: 0;
 }
-.complete{
-    background: #FDF4E3;
+.complete {
+    background: #fdf4e3;
     height: 250px;
     border-radius: 50%;
     top: 0;
     left: 0;
 }
-.images{
+.images {
     width: 20%;
 }
 .bottom-bar:before {

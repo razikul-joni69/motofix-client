@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
-const BookingCard = ({ service, date }) => {
+const BookingCard = ({ service }) => {
     const history = useHistory();
     const handleBuy = (id) => {
         history.push(`/checkout/${id}`);

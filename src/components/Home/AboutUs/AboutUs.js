@@ -1,9 +1,9 @@
 import React from "react";
 import aboutUs from "../../../images/aboutus.png";
-import worker from "../../../images/construction-worker.svg";
-import employee from "../../../images/employee.svg";
 import car from "../../../images/car.svg";
+import worker from "../../../images/construction-worker.svg";
 import diagram from "../../../images/diagram.svg";
+import employee from "../../../images/employee.svg";
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -38,7 +38,9 @@ const AboutUs = () => {
                         <div>
                             <img className="images" src={worker} alt="" />
                             <h3 className="bottom-bar">300+</h3>
-                            <h4 className="text-secondary">Exper technichians</h4>
+                            <h4 className="text-secondary">
+                                Exper technichians
+                            </h4>
                         </div>
                     </div>
                     <div className="col-md-3 d-flex align-items-center justify-content-center text-center client">
@@ -59,10 +61,11 @@ const AboutUs = () => {
                         <div>
                             <img className="images" src={car} alt="" />
                             <h3 className="bottom-bar">1199+</h3>
-                            <h4 className="text-secondary">Compleate Project</h4>
+                            <h4 className="text-secondary">
+                                Compleate Project
+                            </h4>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>

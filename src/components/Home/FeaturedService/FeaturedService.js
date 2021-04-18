@@ -6,7 +6,9 @@ const FeaturedService = () => {
             <div className="container mb-5">
                 <div className="row mb-5">
                     <div className="col-md-7 align-self-center">
-                        <h1>Here’s Our Achivement. <br/> Lets Check it Out</h1>
+                        <h1>
+                            Here’s Our Achivement. <br /> Lets Check it Out
+                        </h1>
                         <p className="text-secondary my-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Tempore efacere amet aperiam non odio.

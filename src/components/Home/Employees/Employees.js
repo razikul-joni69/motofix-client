@@ -18,16 +18,12 @@ const Employees = () => {
                     Meet Our Employees
                 </h5>
                 <h1 className="text-center mb-3">Our Awsome Team</h1>
+                {employee.length === 0 && (
+                    <div className="d-flex justify-content-center">
+                        <Spinner animation="grow" variant="warning" size="lg" />
+                    </div>
+                )}
                 <div className="row">
-                    {employee.length === 0 && (
-                        <div className="text-center">
-                            <Spinner
-                            animation="grow"
-                            variant="warning"
-                            size="lg"
-                        />
-                        </div>
-                    )}
                     {employee.map((employee) => (
                         <Employee key={employee._id} employee={employee} />
                     ))}

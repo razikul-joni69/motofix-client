@@ -17,7 +17,6 @@ const AddEmployee = () => {
 
     const handleSubmit = () => {
         const formData = new FormData();
-        console.log(info);
         formData.append("file", file);
         formData.append("name", info.name);
         formData.append("email", info.email);
@@ -49,7 +48,6 @@ const AddEmployee = () => {
             >
                 <h5 className="text-brand">Add an Employee</h5>
                 <form onSubmit={handleSubmit}>
-                    
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Name</label>
                         <input
@@ -73,9 +71,7 @@ const AddEmployee = () => {
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">
-                            Email address
-                        </label>
+                        <label htmlFor="exampleInputEmail1">Phone Number</label>
                         <input
                             onBlur={handleBlur}
                             type="number"
@@ -106,4 +102,3 @@ const AddEmployee = () => {
 };
 
 export default AddEmployee;
-

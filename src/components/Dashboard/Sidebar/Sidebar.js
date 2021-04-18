@@ -16,16 +16,16 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const [isDoctor, setIsDoctor] = useState(false);
+    const [isAdmin, setAdmin] = useState(false);
 
     useEffect(() => {
-        fetch("http://localhost:5000/isDoctor", {
+        fetch("http://localhost:5000/isAdmin", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ email: loggedInUser.email }),
         })
             .then((res) => res.json())
-            .then((data) => setIsDoctor(data));
+            .then((data) => setAdmin(data));
     }, []);
 
     return (
@@ -41,14 +41,15 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/" className="text-white">
+                    <Link to="/home" className="text-white">
                         <FontAwesomeIcon icon={faHome} /> <span>Home</span>
                     </Link>
                 </li>
-                {/* {isDoctor && ( */}
+                {/* it is takeing too much time to verifying admin*/}
+                {/* {isAdmin && ( */}
                     <div>
                         <li>
-                            <Link to="/allPatients" className="text-white">
+                            <Link to="/allAppointments" className="text-white">
                                 <FontAwesomeIcon icon={faCalendar} />{" "}
                                 <span>Appointments</span>
                             </Link>
@@ -78,7 +79,6 @@ const Sidebar = () => {
                             </Link>
                         </li>
                     </div>
-                    
                 {/* )} */}
             </ul>
             <div>

@@ -1,8 +1,8 @@
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Card, Nav } from "react-bootstrap";
-import './Employee.css';
+import { Card } from "react-bootstrap";
+import "./Employee.css";
 
 const Employee = ({ employee }) => {
     return (
@@ -17,14 +17,13 @@ const Employee = ({ employee }) => {
                 <Card.Body>
                     <Card.Title>{employee.name}</Card.Title>
                     <Card.Text>
-                        <Nav.Link>
-                            {" "}
-                            <FontAwesomeIcon
-                                className="text-primary"
-                                icon={faPhoneAlt}
-                            />{" "}
-                            {employee.phone}
-                        </Nav.Link>
+                        {employee.email}
+                        <br />
+                        <FontAwesomeIcon
+                            className="text-primary"
+                            icon={faPhoneAlt}
+                        />{" "}
+                        {employee.phone}
                     </Card.Text>
                 </Card.Body>
             </Card>

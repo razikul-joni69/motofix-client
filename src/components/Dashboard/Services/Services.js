@@ -17,7 +17,6 @@ const Services = () => {
 
     const handleSubmit = () => {
         const formData = new FormData();
-        console.log(info);
         formData.append("file", file);
         formData.append("serviceName", info.serviceName);
         formData.append("serviceCharge", info.serviceCharge);
