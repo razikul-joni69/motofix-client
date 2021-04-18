@@ -15,7 +15,7 @@ const AppointmentForm = ({ selectedService, appointmentOn, date }) => {
         data.date = date;
         data.created = new Date();
 
-        fetch("http://localhost:5000/addAppointment", {
+        fetch("https://powerful-basin-68172.herokuapp.com/addAppointment", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

@@ -22,7 +22,7 @@ const AddEmployee = () => {
         formData.append("email", info.email);
         formData.append("phone", info.phone);
 
-        fetch("http://localhost:5000/addEmployee", {
+        fetch("https://powerful-basin-68172.herokuapp.com/addEmployee", {
             method: "POST",
             body: formData,
         })

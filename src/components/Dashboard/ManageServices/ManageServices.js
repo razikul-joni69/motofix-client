@@ -5,7 +5,7 @@
 // const ManageServices = () => {
 //     const [services, setServices] = React.useState([]);
 // React.useEffect(() => {
-//     fetch("http://localhost:5000/services")
+//     fetch("https://powerful-basin-68172.herokuapp.com/services")
 //         .then((res) => res.json())
 //         .then((data) => setServices(data));
 // }, []);
@@ -48,13 +48,13 @@ const ManageServices = () => {
     const [services, setServices] = React.useState([]);
 
     React.useEffect(() => {
-        fetch("http://localhost:5000/services")
+        fetch("https://powerful-basin-68172.herokuapp.com/services")
             .then((res) => res.json())
             .then((data) => setServices(data));
     }, [services]);
 
     function deleteEvent(id) {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://powerful-basin-68172.herokuapp.com/delete/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

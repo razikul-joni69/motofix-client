@@ -19,7 +19,7 @@ const Sidebar = () => {
     const [isAdmin, setAdmin] = useState(false);
 
     useEffect(() => {
-        fetch("http://localhost:5000/isAdmin", {
+        fetch("https://powerful-basin-68172.herokuapp.com/isAdmin", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ email: loggedInUser.email }),
@@ -47,38 +47,38 @@ const Sidebar = () => {
                 </li>
                 {/* it is takeing too much time to verifying admin*/}
                 {/* {isAdmin && ( */}
-                    <div>
-                        <li>
-                            <Link to="/allAppointments" className="text-white">
-                                <FontAwesomeIcon icon={faCalendar} />{" "}
-                                <span>Appointments</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/addService" className="text-white">
-                                <FontAwesomeIcon icon={faUsers} />{" "}
-                                <span>Add Services</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/addEmployee" className="text-white">
-                                <FontAwesomeIcon icon={faFileAlt} />{" "}
-                                <span>Make Admin</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/addEmployee" className="text-white">
-                                <FontAwesomeIcon icon={faUserPlus} />{" "}
-                                <span>Add Employee</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/manageServices" className="text-white">
-                                <FontAwesomeIcon icon={faCog} />{" "}
-                                <span>Manage Service</span>
-                            </Link>
-                        </li>
-                    </div>
+                <div>
+                    <li>
+                        <Link to="/allAppointments" className="text-white">
+                            <FontAwesomeIcon icon={faCalendar} />{" "}
+                            <span>Appointments</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/addService" className="text-white">
+                            <FontAwesomeIcon icon={faUsers} />{" "}
+                            <span>Add Services</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/addEmployee" className="text-white">
+                            <FontAwesomeIcon icon={faFileAlt} />{" "}
+                            <span>Make Admin</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/addEmployee" className="text-white">
+                            <FontAwesomeIcon icon={faUserPlus} />{" "}
+                            <span>Add Employee</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/manageServices" className="text-white">
+                            <FontAwesomeIcon icon={faCog} />{" "}
+                            <span>Manage Service</span>
+                        </Link>
+                    </li>
+                </div>
                 {/* )} */}
             </ul>
             <div>

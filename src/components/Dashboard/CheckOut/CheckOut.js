@@ -8,7 +8,7 @@ const CheckOut = () => {
     const [selectedService, setSelectedService] = useState({});
 
     useEffect(() => {
-        fetch("http://localhost:5000/service/" + id)
+        fetch("https://powerful-basin-68172.herokuapp.com/service/" + id)
             .then((response) => response.json())
             .then((data) => setSelectedService(data));
     }, [id]);

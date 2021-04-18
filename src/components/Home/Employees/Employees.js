@@ -6,7 +6,7 @@ import "./Employees.css";
 const Employees = () => {
     const [employee, setEmployee] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/employee")
+        fetch("https://powerful-basin-68172.herokuapp.com/employee")
             .then((res) => res.json())
             .then((data) => setEmployee(data));
     }, []);

@@ -22,7 +22,7 @@ const Services = () => {
         formData.append("serviceCharge", info.serviceCharge);
         formData.append("serviceInfo", info.serviceInfo);
 
-        fetch("http://localhost:5000/addService", {
+        fetch("https://powerful-basin-68172.herokuapp.com/addService", {
             method: "POST",
             body: formData,
         })
